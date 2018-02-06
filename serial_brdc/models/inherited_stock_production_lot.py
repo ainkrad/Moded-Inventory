@@ -23,7 +23,7 @@ class inherited_stock_production_lot(models.Model):
     @api.onchange('product_id', 'block_number', 'lot_number')
     def set_lot_ser(self):
         if self.product_id and self.block_number and self.lot_number:
-            if self.product_id.grave_type != 'Community Vault' and self.product_id.grave_type != 'Columbarium':
+            if self.product_id.grave_type != 'Community Vault' or self.product_id.grave_type != 'Columbarium':
                 self.ref = "A" + str(self.product_id.area_number) + "B" + str(self.block_number) + "L" + str(
                     self.lot_number)
                 self.name = "A" + str(self.product_id.area_number) + "B" + str(self.block_number) + "L" + str(

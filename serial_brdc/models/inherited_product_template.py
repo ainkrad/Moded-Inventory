@@ -14,6 +14,12 @@ class inherited_product_template(models.Model):
     area_number = fields.Char(string="Area")
     grave_type = fields.Char(string="Type")
 
+    _sql_constraints = [
+        ('name_unique',
+         'UNIQUE(name)',
+         "The Product already exist"),
+    ]
+
     @api.onchange('categ_id')
     def set_type(self):
         self.grave_type = self.categ_id.name
@@ -34,3 +40,23 @@ class inherited_product_template(models.Model):
                 self.default_code = "A" + str(self.area_number) + str(gt)[0:1]
         else:
             self.name = ""
+            self.default_code = ""
+
+            # @api.multi
+            # def write(self, values):
+            #     # Add code here
+            #     # self.write()
+            #     # values = {'default_code': self.default_code, 'grave_type': self.grave_type}
+            #     return super(inherited_product_template, self).write(values)
+
+            # @api.model
+            # def create(self, values):
+            #     # Add code here
+            #     values = {'default_code': self.default_code,'grave_type':self.grave_type}
+            #     return super(inherited_product_template, self).create(values)
+            # class grave_type(models.Model):
+            #
+            #     _name = 'grave.type'
+            #     _description = 'Grave type'
+            #
+            #     name = fields.Char()

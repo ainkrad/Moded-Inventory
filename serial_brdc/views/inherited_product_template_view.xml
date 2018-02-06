@@ -14,7 +14,7 @@
                 </xpath>
                 <xpath expr="//field[@name='categ_id']" position="after">
                     <field name="area_number" attrs="{'invisible':[('type','!=','product')]}"/>
-                    <field name="grave_type" attrs="{'invisible':[('type','!=','product')]}"/>
+                    <field name="grave_type" attrs="{'invisible':True}"/>
                 </xpath>
                 <xpath expr="//field[@name='type']" position="replace">
                     <field name="type" default_focus="1"/>
