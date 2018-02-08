@@ -30,7 +30,6 @@
         'views/inherited_product_template_tree_view.xml',
         'views/inherited_stock_quant.xml',
         'views/menu_items.xml',
-        # 'views/inherited_interment_quotation_request.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -8,6 +8,7 @@ class inherited_product_template(models.Model):
     name = fields.Char()
 
     tracking = fields.Selection(default='serial')
+    purchase_ok = fields.Boolean(default=False)
 
     list_price = fields.Float(default=0.00)
 

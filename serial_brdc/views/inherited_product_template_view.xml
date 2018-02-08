@@ -29,12 +29,24 @@
                 <xpath expr="//field[@name='barcode']" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
-                <xpath expr="//field[@name='purchase_ok']" position="attributes">
+                <xpath expr="//field[@name='weight']" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
-                <xpath expr="//label[@for='purchase_ok']" position="attributes">
+                <xpath expr="//label[@for='weight']" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
+                <xpath expr="//field[@name='volume']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//label[@for='volume']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <!--<xpath expr="//field[@name='purchase_ok']" position="attributes">-->
+                    <!--<attribute name="invisible">1</attribute>-->
+                <!--</xpath>-->
+                <!--<xpath expr="//label[@for='purchase_ok']" position="attributes">-->
+                    <!--<attribute name="invisible">1</attribute>-->
+                <!--</xpath>-->
                 <!--<xpath expr="//field[@name='standard_price']" position="attributes">-->
                     <!--<attribute name="invisible">1</attribute>-->
                 <!--</xpath>-->
