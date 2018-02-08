@@ -30,8 +30,11 @@ class inherited_product_template(models.Model):
         gt = self.grave_type
         if self.area_number and gt:
             self.name = "Area " + str(self.area_number) + " / " + str(gt)
-            if ' ' in str(gt):
-                st = str(gt).split()
+            if ' ' in str(gt) or '-' in str(gt):
+                if '-' in str(gt):
+                    st = str(gt).split('-')
+                else:
+                    st = str(gt).split()
                 at = ''
                 for t in st:
                     at = at + t[0:1]

@@ -1,18 +1,21 @@
 <odoo>
     <data>
-        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
         <menuitem id="BRDC_inventory_root" name="BRDC Inventory"/>
 
-        <!-- This Menu Item must have a parent and an action -->
         <menuitem id="inventory_control_categ" name="Inventory Control" parent="BRDC_inventory_root"/>
 
-        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="configuration_control_categ" name="Configuration" parent="BRDC_inventory_root"/>
+
         <menuitem id="product_inventory_categ" name="Product" parent="inventory_control_categ" action="product.product_template_action_all"/>
 
-        <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="product_inventory_categ" name="Product" parent="inventory_control_categ" action="product.product_template_action_all"/>
+        <menuitem id="lot_nitches_inventory_categ" name="Lots / Niches" parent="inventory_control_categ" action="stock.action_production_lot_form"/>
 
-        <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="product_inventory_categ" name="Product" parent="inventory_control_categ" action="product.product_template_action_all"/>
+        <menuitem id="inventory_adjustments_inventory_categ" name="Inventory Adjustments" parent="inventory_control_categ" action="stock.action_inventory_form"/>
+
+        <menuitem id="product_category_inventory_categ" name="Product Category" parent="configuration_control_categ" action="product.product_category_action_form"/>
+
+        <menuitem id="attribute_values_inventory_categ" name="Product Attribute" parent="configuration_control_categ" action="product.variants_action"/>
+
+        <menuitem id="pricelist_inventory_categ" name="Pricelists" parent="configuration_control_categ" action="product.product_pricelist_action2"/>
     </data>
 </odoo>

@@ -53,6 +53,7 @@ class inherited_stock_production_lot(models.Model):
             self.ref = ""
             self.name = ""
 
+
 class interred_person(models.Model):
     _model = 'interred.person'
 
