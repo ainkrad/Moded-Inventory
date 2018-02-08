@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+        <menuitem id="BRDC_inventory_root" name="BRDC Inventory"/>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="inventory_control_categ" name="Inventory Control" parent="BRDC_inventory_root"/>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="product_inventory_categ" name="Product" parent="inventory_control_categ" action="product.product_template_action_all"/>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="product_inventory_categ" name="Product" parent="inventory_control_categ" action="product.product_template_action_all"/>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="product_inventory_categ" name="Product" parent="inventory_control_categ" action="product.product_template_action_all"/>
+    </data>
+</odoo>

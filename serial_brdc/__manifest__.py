@@ -18,7 +18,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','stock'],
+    'depends': ['base','stock','loan_application','loan_information'],
 
     # always loaded
     'data': [
@@ -29,6 +29,8 @@
         'views/inherited_product_template_view.xml',
         'views/inherited_product_template_tree_view.xml',
         'views/inherited_stock_quant.xml',
+        'views/menu_items.xml',
+        # 'views/inherited_interment_quotation_request.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

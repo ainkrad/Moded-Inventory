@@ -20,8 +20,22 @@
                         <field name="interred_person"/>
                     </page>
                 </xpath>
+                <xpath expr="//sheet/notebook/page[2]" position="before">
+                    <page string="Loanee Information">
+                        <group>
+                            <group>
+                                <field name="loanee_id" attrs="{'invisible':True}"/>
+                                <field name="loanee_name" attrs="{'readonly':True}"/>
+                            </group>
+                            <group>
+                                <field name="loanee_payment_term" attrs="{'readonly':True}"/>
+                                <field name="loanee_contract_price" attrs="{'readonly':True}"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
 
-                <xpath expr="//sheet/notebook/page[2]" position="attributes">
+                <xpath expr="//sheet/notebook/page[3]" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
 
