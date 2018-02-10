@@ -10,6 +10,7 @@ class inherited_product_template(models.Model):
     tracking = fields.Selection(default='serial')
     purchase_ok = fields.Boolean(default=False)
 
+
     list_price = fields.Float(default=0.00)
 
     area_number = fields.Char(string="Area")

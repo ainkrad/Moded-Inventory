@@ -9,15 +9,20 @@
 
                 <xpath expr="//field[@name='default_code']" position="replace">
                 </xpath>
+                <xpath expr="//field[@name='type']" position="replace">
+                    <field name="type" default_focus="1"/>
+                </xpath>
+                <xpath expr="//field[@name='purchase_method']" position="replace">
+                </xpath>
+                <!--<xpath expr="//field[@name='tracking']" position="replace">-->
+                <!--</xpath>-->
+
                 <xpath expr="//field[@name='list_price']" position="before">
                     <field name="default_code"/>
                 </xpath>
                 <xpath expr="//field[@name='categ_id']" position="after">
                     <field name="area_number" attrs="{'invisible':[('type','!=','product')]}"/>
                     <field name="grave_type" attrs="{'invisible':True}"/>
-                </xpath>
-                <xpath expr="//field[@name='type']" position="replace">
-                    <field name="type" default_focus="1"/>
                 </xpath>
 
                 <xpath expr="//field[@name='list_price']" position="attributes">
@@ -41,6 +46,9 @@
                 <xpath expr="//label[@for='volume']" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
+                <!--<xpath expr="//label[@for='purchase_method']" position="attributes">-->
+                    <!--<attribute name="invisible">[('purchase_ok','=','True')]</attribute>-->
+                <!--</xpath>-->
                 <!--<xpath expr="//field[@name='purchase_ok']" position="attributes">-->
                     <!--<attribute name="invisible">1</attribute>-->
                 <!--</xpath>-->
