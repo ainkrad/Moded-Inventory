@@ -21,6 +21,7 @@ class IntermentQuotation(models.Model):
                                  domain=[('type', 'in', ['consu','product']), ('sale_ok', '=', 'True')]
                                  )
     product_lot_id = fields.Many2one('stock.production.lot', string='Lawn Lot',)
+
     selling_price = fields.Float(string='Selling Price')
     spot_cash = fields.Float(string='Spot Cash', store=False, compute='_get_spotcash',)
     split_cash = fields.Float(string='3-Months Deferred Cash', store=False, compute='_get_splitcash')
@@ -80,7 +81,8 @@ class IntermentQuotation(models.Model):
     def get_selling_price(self):
         # name = self.env['payment.config'].search([('name', 'like', '%60 ')]).name
         # self.is_60m = (self.payment_term_id.name == name)
-        pricelist_item = self.env['product.pricelist.item'].search([('pricelist_id','=',self.product_pricelist_id.id),('product_tmpl_id', '=', self.product_id.id)])
+        pricelist_item = self.env['product.pricelist.item'].search([('pricelist_id','=',self.product_pricelist_id.id),
+                                                                    ('product_tmpl_id', '=', self.product_id.id),])
         # self._get_bp_wi()
         # print pricelist_item
         self.selling_price = pricelist_item.fixed_price
