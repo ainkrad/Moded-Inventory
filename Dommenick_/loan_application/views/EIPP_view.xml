@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="eipp_form_view" model="ir.ui.view">
+            <field name="name">EIPP APPLICATION</field>
+            <field name="model">eipp.application</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <field name="active" invisible="1"/>
+                    <header attrs="{'invisible': [('active','=',False)]}">
+                          <button name="action_eval" string="Evaluate" class="oe_highlight" states="draft" type="object"/>
+                          <button name="action_apro" type="object" string="Approve" states="eval" class="oe_highlight"/>
+                          <button name="action_note" type="object" string="Note" states="apro" class="oe_highlight"/>
+                          <button name="action_draft" type="object" string="Reset to Draft" states="eval,apro,note"/>
+                          <field name="state"
+                                 widget="statusbar"
+                                 statusbar_visible="draft,eval,apro,note"
+                          />
+                      </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1><field name="refNo"/></h1>
+                        </div>
+                        <center><h3>EARLY INTERMENT PAYOFF PLAN</h3></center>
+                        <hr/>
+                        <group>
+                            <field name="name"/>
+                            <!--<field name="pa_no" string="P.A. No"/>-->
+                        </group>
+                        <group>
+                            <group><field name="eipp_payment_plan" widget="radio" options="{'horizontal': true}"/></group>
+                            <group><field name="eipp_amount_payment"/></group>
+                        </group>
+                        <group>
+                            <field name="or_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="eipp_search_view" model="ir.ui.view">
+           <field name="name">eipp.search</field>
+           <field name="model">eipp.application</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <field name="name" string="Name"/>
+                    <field name="refNo" string="Reference No"/>
+                </search>
+           </field>
+        </record>
+
+        <record id="eipp_tree_view" model="ir.ui.view">
+            <field name="name">EIPP APPLICATION</field>
+            <field name="model">eipp.application</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="refNo"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="eipp_action_view" model="ir.actions.act_window">
+            <field name="name">EIPP APPLICATION</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">eipp.application</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="eipp_menu_loan_id" name="EIPP Application" parent="BRDC_menu_parent" action="eipp_action_view" sequence="2"/>
+
+    </data>
+</odoo>

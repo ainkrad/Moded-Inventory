@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="388b03d9-2b04-4493-8098-b9169607accd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Dommenick.iml" afterPath="$PROJECT_DIR$/.idea/Dommenick.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/images/screen.png" afterPath="$PROJECT_DIR$/backend_theme/images/screen.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/description/icon.png" afterPath="$PROJECT_DIR$/backend_theme/static/description/icon.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/description/img1.png" afterPath="$PROJECT_DIR$/backend_theme/static/description/img1.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/description/img2.png" afterPath="$PROJECT_DIR$/backend_theme/static/description/img2.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/description/img3.png" afterPath="$PROJECT_DIR$/backend_theme/static/description/img3.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/description/img4.png" afterPath="$PROJECT_DIR$/backend_theme/static/description/img4.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/description/img5.png" afterPath="$PROJECT_DIR$/backend_theme/static/description/img5.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/description/index.html" afterPath="$PROJECT_DIR$/backend_theme/static/description/index.html" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/src/font/Roboto-Regular.ttf" afterPath="$PROJECT_DIR$/backend_theme/static/src/font/Roboto-Regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/src/img/material-background.jpg" afterPath="$PROJECT_DIR$/backend_theme/static/src/img/material-background.jpg" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/src/less/bootswatch/bootswatch.less" afterPath="$PROJECT_DIR$/backend_theme/static/src/less/bootswatch/bootswatch.less" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/src/less/bootswatch/style.less" afterPath="$PROJECT_DIR$/backend_theme/static/src/less/bootswatch/style.less" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/static/src/less/bootswatch/variables.less" afterPath="$PROJECT_DIR$/backend_theme/static/src/less/bootswatch/variables.less" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/views/assets.xml" afterPath="$PROJECT_DIR$/backend_theme/views/assets.xml" />
+      <change beforePath="$PROJECT_DIR$/backend_theme/views/web.xml" afterPath="$PROJECT_DIR$/backend_theme/views/web.xml" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/__init__.py" afterPath="$PROJECT_DIR$/backend_theme_green/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/__manifest__.py" afterPath="$PROJECT_DIR$/backend_theme_green/__manifest__.py" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/images/screen.png" afterPath="$PROJECT_DIR$/backend_theme_green/images/screen.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/description/calendar.png" afterPath="$PROJECT_DIR$/backend_theme_green/static/description/calendar.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/description/contact.png" afterPath="$PROJECT_DIR$/backend_theme_green/static/description/contact.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/description/crm.png" afterPath="$PROJECT_DIR$/backend_theme_green/static/description/crm.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/description/icon.png" afterPath="$PROJECT_DIR$/backend_theme_green/static/description/icon.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/description/index.html" afterPath="$PROJECT_DIR$/backend_theme_green/static/description/index.html" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/description/inventory.png" afterPath="$PROJECT_DIR$/backend_theme_green/static/description/inventory.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/description/product.png" afterPath="$PROJECT_DIR$/backend_theme_green/static/description/product.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/description/project.png" afterPath="$PROJECT_DIR$/backend_theme_green/static/description/project.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/description/recruitment.png" afterPath="$PROJECT_DIR$/backend_theme_green/static/description/recruitment.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/description/screen.png" afterPath="$PROJECT_DIR$/backend_theme_green/static/description/screen.png" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/lib/css/drawer.3.2.0.css" afterPath="$PROJECT_DIR$/backend_theme_green/static/lib/css/drawer.3.2.0.css" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/lib/js/drawer.3.2.0.js" afterPath="$PROJECT_DIR$/backend_theme_green/static/lib/js/drawer.3.2.0.js" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/lib/js/iscroll-probe.5.2.0.js" afterPath="$PROJECT_DIR$/backend_theme_green/static/lib/js/iscroll-probe.5.2.0.js" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/src/font/Roboto-Regular.ttf" afterPath="$PROJECT_DIR$/backend_theme_green/static/src/font/Roboto-Regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/src/img/material-background.jpg" afterPath="$PROJECT_DIR$/backend_theme_green/static/src/img/material-background.jpg" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/src/js/web_responsive.js" afterPath="$PROJECT_DIR$/backend_theme_green/static/src/js/web_responsive.js" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/src/less/app_drawer.less" afterPath="$PROJECT_DIR$/backend_theme_green/static/src/less/app_drawer.less" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/src/less/bootswatch/bootswatch.less" afterPath="$PROJECT_DIR$/backend_theme_green/static/src/less/bootswatch/bootswatch.less" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/src/less/bootswatch/style.less" afterPath="$PROJECT_DIR$/backend_theme_green/static/src/less/bootswatch/style.less" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/src/less/bootswatch/variables.less" afterPath="$PROJECT_DIR$/backend_theme_green/static/src/less/bootswatch/variables.less" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/src/less/main.less" afterPath="$PROJECT_DIR$/backend_theme_green/static/src/less/main.less" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/src/less/navbar.less" afterPath="$PROJECT_DIR$/backend_theme_green/static/src/less/navbar.less" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/static/src/less/variables.less" afterPath="$PROJECT_DIR$/backend_theme_green/static/src/less/variables.less" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/views/assets.xml" afterPath="$PROJECT_DIR$/backend_theme_green/views/assets.xml" />
+      <change beforePath="$PROJECT_DIR$/backend_theme_green/views/web.xml" afterPath="$PROJECT_DIR$/backend_theme_green/views/web.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/.idea/loan_application.iml" afterPath="$PROJECT_DIR$/loan_application/.idea/loan_application.iml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/.idea/misc.xml" afterPath="$PROJECT_DIR$/loan_application/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/.idea/modules.xml" afterPath="$PROJECT_DIR$/loan_application/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/.idea/workspace.xml" afterPath="$PROJECT_DIR$/loan_application/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/__init__.py" afterPath="$PROJECT_DIR$/loan_application/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/__manifest__.py" afterPath="$PROJECT_DIR$/loan_application/__manifest__.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/controllers/__init__.py" afterPath="$PROJECT_DIR$/loan_application/controllers/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/controllers/controllers.py" afterPath="$PROJECT_DIR$/loan_application/controllers/controllers.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/demo/demo.xml" afterPath="$PROJECT_DIR$/loan_application/demo/demo.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/Interment_policies.py" afterPath="$PROJECT_DIR$/loan_application/models/Interment_policies.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/Report_1.py" afterPath="$PROJECT_DIR$/loan_application/models/Report_1.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/__init__.py" afterPath="$PROJECT_DIR$/loan_application/models/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/agency.py" afterPath="$PROJECT_DIR$/loan_application/models/agency.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/application_wizard.py" afterPath="$PROJECT_DIR$/loan_application/models/application_wizard.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/eipp_application.py" afterPath="$PROJECT_DIR$/loan_application/models/eipp_application.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/interment_order.py" afterPath="$PROJECT_DIR$/loan_application/models/interment_order.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/loan_app.py" afterPath="$PROJECT_DIR$/loan_application/models/loan_app.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/localization.py" afterPath="$PROJECT_DIR$/loan_application/models/localization.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/models.py" afterPath="$PROJECT_DIR$/loan_application/models/models.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/res_company.py" afterPath="$PROJECT_DIR$/loan_application/models/res_company.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/models/res_users.py" afterPath="$PROJECT_DIR$/loan_application/models/res_users.py" />
+      <change beforePath="$PROJECT_DIR$/loan_application/report/policies.xml" afterPath="$PROJECT_DIR$/loan_application/report/policies.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/loan_application/security/ir.model.access.csv" />
+      <change beforePath="$PROJECT_DIR$/loan_application/static/img/address.png" afterPath="$PROJECT_DIR$/loan_application/static/img/address.png" />
+      <change beforePath="$PROJECT_DIR$/loan_application/static/img/icon_image.png" afterPath="$PROJECT_DIR$/loan_application/static/img/icon_image.png" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/EIPP_view.xml" afterPath="$PROJECT_DIR$/loan_application/views/EIPP_view.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/Interment_order.xml" afterPath="$PROJECT_DIR$/loan_application/views/Interment_order.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/application_wizard.xml" afterPath="$PROJECT_DIR$/loan_application/views/application_wizard.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/interment_policy.xml" afterPath="$PROJECT_DIR$/loan_application/views/interment_policy.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/internal_notes.xml" afterPath="$PROJECT_DIR$/loan_application/views/internal_notes.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/ir_sequence.xml" afterPath="$PROJECT_DIR$/loan_application/views/ir_sequence.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/loan_client.xml" afterPath="$PROJECT_DIR$/loan_application/views/loan_client.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/local.xml" afterPath="$PROJECT_DIR$/loan_application/views/local.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/res_company_view.xml" afterPath="$PROJECT_DIR$/loan_application/views/res_company_view.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/res_users_view.xml" afterPath="$PROJECT_DIR$/loan_application/views/res_users_view.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/templates.xml" afterPath="$PROJECT_DIR$/loan_application/views/templates.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_application/views/views.xml" afterPath="$PROJECT_DIR$/loan_application/views/views.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_information/__init__.py" afterPath="$PROJECT_DIR$/loan_information/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/loan_information/__manifest__.py" afterPath="$PROJECT_DIR$/loan_information/__manifest__.py" />
+      <change beforePath="$PROJECT_DIR$/loan_information/controllers/__init__.py" afterPath="$PROJECT_DIR$/loan_information/controllers/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/loan_information/controllers/controllers.py" afterPath="$PROJECT_DIR$/loan_information/controllers/controllers.py" />
+      <change beforePath="$PROJECT_DIR$/loan_information/demo/demo.xml" afterPath="$PROJECT_DIR$/loan_information/demo/demo.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_information/models/__init__.py" afterPath="$PROJECT_DIR$/loan_information/models/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/loan_information/models/loan_line.py" afterPath="$PROJECT_DIR$/loan_information/models/loan_line.py" />
+      <change beforePath="$PROJECT_DIR$/loan_information/models/models.py" afterPath="$PROJECT_DIR$/loan_information/models/models.py" />
+      <change beforePath="$PROJECT_DIR$/loan_information/models/payment_configuration.py" afterPath="$PROJECT_DIR$/loan_information/models/payment_configuration.py" />
+      <change beforePath="$PROJECT_DIR$/loan_information/models/quotation.py" afterPath="$PROJECT_DIR$/loan_information/models/quotation.py" />
+      <change beforePath="$PROJECT_DIR$/loan_information/models/res_partner.py" afterPath="$PROJECT_DIR$/loan_information/models/res_partner.py" />
+      <change beforePath="$PROJECT_DIR$/loan_information/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/loan_information/security/ir.model.access.csv" />
+      <change beforePath="$PROJECT_DIR$/loan_information/views/loan_summary_view.xml" afterPath="$PROJECT_DIR$/loan_information/views/loan_summary_view.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_information/views/payment_config.xml" afterPath="$PROJECT_DIR$/loan_information/views/payment_config.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_information/views/quotation.xml" afterPath="$PROJECT_DIR$/loan_information/views/quotation.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_information/views/templates.xml" afterPath="$PROJECT_DIR$/loan_information/views/templates.xml" />
+      <change beforePath="$PROJECT_DIR$/loan_information/views/views.xml" afterPath="$PROJECT_DIR$/loan_information/views/views.xml" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loan_information/models/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#25#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="res_partner.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loan_information/models/res_partner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quotation.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/loan_information/views/quotation.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="164" column="58" lean-forward="false" selection-start-line="164" selection-start-column="58" selection-end-line="164" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loan_summary_view.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loan_information/views/loan_summary_view.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loan_line.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loan_information/models/loan_line.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quotation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loan_information/models/quotation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1275">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__manifest__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loan_information/__manifest__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>%</find>
+      <find>action_paid_amount</find>
+      <find>_get_amount</find>
+      <find>active_</find>
+      <find>active_id</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/loan_information/models/loan_line.xml.py" />
+        <option value="$PROJECT_DIR$/loan_information/models/__init__.py" />
+        <option value="$PROJECT_DIR$/loan_application/__manifest__.py" />
+        <option value="$PROJECT_DIR$/loan_information/views/loan_summary_view.xml" />
+        <option value="$PROJECT_DIR$/loan_information/__manifest__.py" />
+        <option value="$PROJECT_DIR$/loan_information/models/quotation.py" />
+        <option value="$PROJECT_DIR$/loan_information/models/loan_line.py" />
+        <option value="$PROJECT_DIR$/loan_information/models/res_partner.py" />
+        <option value="$PROJECT_DIR$/loan_information/views/quotation.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="57" />
+    <option name="y" value="21" />
+    <option name="width" value="1366" />
+    <option name="height" value="764" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Dommenick" type="cbb8eebc:String" user="Dommenick" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Dommenick" type="cbb8eebc:String" user="Dommenick" />
+              <item name="loan_information" type="cbb8eebc:String" user="loan_information" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Dommenick" type="cbb8eebc:String" user="Dommenick" />
+              <item name="loan_information" type="cbb8eebc:String" user="loan_information" />
+              <item name="views" type="cbb8eebc:String" user="views" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="388b03d9-2b04-4493-8098-b9169607accd" name="Default" comment="" />
+      <created>1513843543969</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513843543969</updated>
+    </task>
+    <task id="LOCAL-00001" summary="initial 1">
+      <created>1517448789402</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1517448789402</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial 1">
+      <created>1517448822926</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1517448822926</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial 2">
+      <created>1517536633240</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1517536633240</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="57" y="-4" width="1863" height="954" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3185096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24711697" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial 1" />
+    <MESSAGE value="initial 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/loan_information/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/res_partner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/views/loan_summary_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/loan_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/quotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/views/quotation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="165" column="50" lean-forward="false" selection-start-line="165" selection-start-column="50" selection-end-line="165" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/res_partner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/views/loan_summary_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/loan_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/quotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/views/quotation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/res_partner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/views/loan_summary_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/loan_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/quotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/views/quotation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_application/views/loan_client.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_application/views/Interment_order.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="163" column="24" lean-forward="true" selection-start-line="151" selection-start-column="8" selection-end-line="163" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_application/views/views.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="76" column="58" lean-forward="false" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_application/models/loan_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_application/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/views/loan_summary_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/quotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/loan_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/models/res_partner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan_information/views/quotation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="164" column="58" lean-forward="false" selection-start-line="164" selection-start-column="58" selection-end-line="164" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

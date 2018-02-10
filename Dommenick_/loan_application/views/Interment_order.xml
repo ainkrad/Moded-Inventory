@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="song_request" model="ir.ui.view">
+            <field name="name">song.request.form</field>
+            <field name="model">song.request</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="interment_order_form" model="ir.ui.view">
+            <field name="name">interment.order.form</field>
+            <field name="model">interment.order</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1><field name="name" readonly="1"/></h1>
+                        </div>
+                        <!--<group>-->
+                            <!--<field string="Name of Departed" name="partner_id" options="{&quot;always_reload&quot;: True}" domain="[('customer', '=', True)]"/>-->
+                        <!--</group>-->
+                        <group>
+                            <center><h3>INTERMENT INFORMATION</h3></center>
+                        </group>
+                        <br/>
+                        <hr/>
+                        <group>
+                            <field name="NatureOfInterment" widget="radio" options="{'horizontal': true}"/>
+                        </group>
+                        <group>
+                            <field name="nature_selection" invisible="1"/>
+
+                            <group>
+                                <field string="Name of Departed"
+                                       name="partner_id"
+                                       options="{&quot;always_reload&quot;: True}"
+                                       domain="[('is_company', '=', False),('is_deceased','=', True)]"
+                                       attrs="{'required':[('nature_selection','=',False)],'invisible':[('nature_selection','=', True)]}"
+                                />
+                                <field name="sale_id"/>
+                            </group>
+                            <group attrs="{'invisible':[('nature_selection','=', False)]}">
+                                <field name="informant_ids" domain="[('is_deceased','=',False)]" string="Informant"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group string="Interment Detail">
+                                <field name="interment_datetime"/>
+                            </group>
+                            <group string="Mass Detail" attrs="{'invisible':[('nature_selection','=',True)]}">
+                                <field name="mass_datetime"/>
+                                <field name="mass_location"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Program" attrs="{'invisible':[('nature_selection','=', True)]}">
+                                 <group>
+                                    <field name="song_ids" nolabel="1" widget="many2many"/>
+                                </group>
+                            </page>
+                            <page string="Bone Transfer" attrs="{'invisible':[('nature_selection','=', False)]}" autofocus="autofocus">
+                                <field name="bone_transfer_ids" domain="[('is_company','=',False)]" nolabel="1">
+                                    <tree>
+                                        <field name="name"/>
+                                        <field name="DateOfDeath"/>
+                                        <field name="CauseOfDeath"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Other Information">
+                                <group>
+                                    <group><field name="casket_size" widget="radio" options="{'horizontal': true}"
+                                                  attrs="{'invisible':[('nature_selection','=', True)]}"
+                                    /></group>
+                                    <group><field name="Wake_address" string="Wake Address"
+                                                  attrs="{'invisible':[('nature_selection','=', True)]}"
+                                    /></group>
+                                </group>
+                                <group>
+                                    <group string="Remark">
+                                        <field name="Lot_owner_id"/>
+                                        <field name="title_name"/>
+                                    </group>
+                                    <group string="_">
+                                        <field name="is_publish"/>
+                                    </group>
+                                </group>
+                            </page>
+
+
+                        </notebook>
+                        <!--<group>-->
+                            <!--<group>-->
+                                <!--<field name="song_ids" nolabel="1" widget="one2many_list"/>-->
+                            <!--</group>-->
+                        <!--</group>-->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--&lt;!&ndash; Inherit Form View to Modify it &ndash;&gt;-->
+        <!--<record id="interment_order_form_1" model="ir.ui.view">-->
+            <!--<field name="name">interment.order.form.inherit</field>-->
+            <!--<field name="model">interment.order</field>-->
+            <!--<field name="inherit_id" ref="loan_application.interment_order_form"/>-->
+            <!--<field name="arch" type="xml">-->
+
+                <!--<xpath expr="//field[@name='Lot_owner_id']" position="attributes">-->
+                    <!--<attribute name="related">partner_id</attribute>-->
+                <!--</xpath>-->
+
+            <!--</field>-->
+        <!--</record>-->
+
+        <record id="interment_order_tree" model="ir.ui.view">
+            <field name="name">interment.order.tree</field>
+            <field name="model">interment.order</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="nature_selection" invisible="1"/>
+                    <field name="name"/>
+                    <field name="partner_id" attrs="{'invisible':[('nature_selection','=', True)]}"/>
+                    <field name="informant_ids" string="Informant" attrs="{'invisible':[('nature_selection','=', False)]}"/>
+                </tree>
+            </field>
+        </record>
+        <record id="interment_order_view" model="ir.actions.act_window">
+            <field name="name">Interment Order</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">interment.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--<field name="context"></field>-->
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+
+        <!-- Inherit Form View to Modify it -->
+        <!--<record id="res_partner_interment_order" model="ir.ui.view">-->
+            <!--<field name="name">res.partner.interment.order</field>-->
+            <!--<field name="model">res.partner</field>-->
+            <!--<field name="inherit_id" ref="base.view_partner_form"/>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<div name="button_box" position="inside">-->
+                    <!--<button class="oe_stat_button" type="action" name="%(loan_application.interment_order_view)d"-->
+                    <!--icon="fa-pencil-square" string="Interment Order"-->
+                    <!--/>-->
+                <!--</div>-->
+            <!--</field>-->
+        <!--</record>-->
+
+
+        <!-- Inherit Form View to Modify it -->
+        <!--<record id="view_partner_form_11" model="ir.ui.view">-->
+          <!--<field name="name">Customer</field>-->
+          <!--<field name="model">res.partner</field>-->
+          <!--<field name="inherit_id" ref="loan_application.view_partner_form_2"/>-->
+          <!--<field name="arch" type="xml">-->
+
+                <!--<xpath expr="//notebook/page[7]" position="after">-->
+                    <!--<page string="Interment Order">-->
+                        <!--<field name="interment_order_id"/>-->
+                    <!--</page>-->
+                <!--</xpath>-->
+
+            <!--</field>-->
+        <!--</record>-->
+
+        <menuitem id="interment_order_menu_id" name="Interment Order" parent="BRDC_menu_parent" action="interment_order_view" sequence="3"/>
+    </data>
+</odoo>

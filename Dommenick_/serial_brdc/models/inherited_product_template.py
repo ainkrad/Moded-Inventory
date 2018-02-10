@@ -8,8 +8,6 @@ class inherited_product_template(models.Model):
     name = fields.Char()
 
     tracking = fields.Selection(default='serial')
-    purchase_ok = fields.Boolean(default=False)
-
 
     list_price = fields.Float(default=0.00)
 
@@ -32,11 +30,8 @@ class inherited_product_template(models.Model):
         gt = self.grave_type
         if self.area_number and gt:
             self.name = "Area " + str(self.area_number) + " / " + str(gt)
-            if ' ' in str(gt) or '-' in str(gt):
-                if '-' in str(gt):
-                    st = str(gt).split('-')
-                else:
-                    st = str(gt).split()
+            if ' ' in str(gt):
+                st = str(gt).split()
                 at = ''
                 for t in st:
                     at = at + t[0:1]
@@ -47,11 +42,21 @@ class inherited_product_template(models.Model):
             self.name = ""
             self.default_code = ""
 
-        if self.grave_type == "Marble Markers":
-            self.tracking = 'lot'
-            self.sale_ok = False
-            self.purchase_ok = True
-        else:
-            self.tracking = 'serial'
-            self.purchase_ok = False
-            self.sale_ok = True
+            # @api.multi
+            # def write(self, values):
+            #     # Add code here
+            #     # self.write()
+            #     # values = {'default_code': self.default_code, 'grave_type': self.grave_type}
+            #     return super(inherited_product_template, self).write(values)
+
+            # @api.model
+            # def create(self, values):
+            #     # Add code here
+            #     values = {'default_code': self.default_code,'grave_type':self.grave_type}
+            #     return super(inherited_product_template, self).create(values)
+            # class grave_type(models.Model):
+            #
+            #     _name = 'grave.type'
+            #     _description = 'Grave type'
+            #
+            #     name = fields.Char()

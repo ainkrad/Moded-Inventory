@@ -1,20 +1,19 @@
 from odoo import api, fields, models
 
 
-class inherited_product_template(models.Model):
+class inherited_product_product(models.Model):
 
-    _inherit = 'product.template'
+    _inherit = 'product.product'
 
-    name = fields.Char()
+    # name = fields.Char()
 
-    tracking = fields.Selection(default='serial')
+    # tracking = fields.Selection(default='serial')
     purchase_ok = fields.Boolean(default=False)
-
 
     list_price = fields.Float(default=0.00)
 
-    area_number = fields.Char(string="Area")
-    grave_type = fields.Char(string="Type")
+    # area_number = fields.Char(string="Area")
+    # grave_type = fields.Char(string="Type")
 
     _sql_constraints = [
         ('name_unique',
@@ -25,6 +24,15 @@ class inherited_product_template(models.Model):
     @api.onchange('categ_id')
     def set_type(self):
         self.grave_type = self.categ_id.name
+        if self.grave_type == "Marble Markers":
+            self.tracking = 'lot'
+            self.sale_ok = False
+            self.purchase_ok = True
+
+        else:
+            self.tracking = 'serial'
+            self.purchase_ok = False
+            self.sale_ok = True
 
     @api.depends('area_number', 'grave_type', 'categ_id')
     @api.onchange('area_number', 'grave_type', 'categ_id')
@@ -44,14 +52,6 @@ class inherited_product_template(models.Model):
             else:
                 self.default_code = "A" + str(self.area_number) + str(gt)[0:1]
         else:
-            self.name = ""
+            # self.name = ""
             self.default_code = ""
 
-        if self.grave_type == "Marble Markers":
-            self.tracking = 'lot'
-            self.sale_ok = False
-            self.purchase_ok = True
-        else:
-            self.tracking = 'serial'
-            self.purchase_ok = False
-            self.sale_ok = True

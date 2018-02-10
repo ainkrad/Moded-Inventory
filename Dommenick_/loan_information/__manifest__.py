@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "serial_brdc",
+    'name': "loan_information",
 
-    'summary': """A Small Description""",
+    'summary': """
+        Short (1 phrase/line) summary of the module's purpose, used as
+        subtitle on modules listing or apps.openerp.com""",
 
     'description': """
-        No purpose at all
+        Long description of module's purpose
     """,
 
-    'author': "MGC",
-    'website': "http://www.mutigroup.com",
+    'author': "My Company",
+    'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
@@ -18,19 +20,20 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','stock','loan_application','loan_information','purchase'],
+    'depends': ['base',
+                'account_voucher',
+                'stock',
+                'loan_application',
+                ],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/inherited_stock_production_lot.xml',
-        'views/inherited_product_template_view.xml',
-        'views/inherited_product_template_tree_view.xml',
-        'views/inherited_stock_quant.xml',
-        'views/menu_items.xml',
-        'views/inherited_product_product_view.xml',
+        'views/quotation.xml',
+        'views/payment_config.xml',
+        'views/loan_summary_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

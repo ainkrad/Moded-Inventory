@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_partner_form_8" model="ir.ui.view">
+            <field name="name">Customer</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="loan_application.view_partner_form_7"/>
+            <field name="arch" type="xml">
+
+                <!--<xpath expr="//field[@name='name']" position="">-->
+                    <!--&lt;!&ndash; Add your fields or attributes here &ndash;&gt;-->
+                <!--</xpath>-->
+                <xpath expr="//field[@name='comment']" position="before">
+                    <!--<group>-->
+                        <!--<field name="user_evaluate"/>-->
+                        <!--<field name="user_approve"/>-->
+                        <!--<field name="user_note"/>-->
+                    <!--</group>-->
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+    # -*- coding: utf-8 -*-
 {
     'name': "serial_brdc",
 
@@ -18,7 +18,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','stock','loan_application','loan_information','purchase'],
+    'depends': ['base','stock'],
 
     # always loaded
     'data': [
@@ -29,8 +29,6 @@
         'views/inherited_product_template_view.xml',
         'views/inherited_product_template_tree_view.xml',
         'views/inherited_stock_quant.xml',
-        'views/menu_items.xml',
-        'views/inherited_product_product_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

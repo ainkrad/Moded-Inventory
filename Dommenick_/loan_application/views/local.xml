@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="config_region_tree" model="ir.ui.view">
+            <field name="name">config.region.tree</field>
+            <field name="model">config.region</field>
+            <field name="arch" type="xml">
+                <tree string="Region">
+                    <field name="name"/>
+                    <field name="region_code"/>
+                </tree>
+            </field>
+        </record>
+        <record id="config_region_form" model="ir.ui.view">
+            <field name="name">config.region.form</field>
+            <field name="model">config.region</field>
+            <field name="arch" type="xml">
+                <form string="Region">
+                    <sheet string="Region">
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="region_code"/>
+                            </group>
+                            <group>
+                                <field name="country_id"/>
+                                <field name="active"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="config_region_action" model="ir.actions.act_window">
+            <field name="name">Region</field>
+            <field name="res_model">config.region</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="config_province_tree" model="ir.ui.view">
+            <field name="name">config.province.tree</field>
+            <field name="model">config.province</field>
+            <field name="arch" type="xml">
+                <tree string="Province">
+                    <field name="name"/>
+                    <field name="province_code"/>
+                </tree>
+            </field>
+        </record>
+        <record id="config_province_form" model="ir.ui.view">
+            <field name="name">config.province.form</field>
+            <field name="model">config.province</field>
+            <field name="arch" type="xml">
+                <form string="Province">
+                    <sheet string="Province">
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="province_code"/>
+                            </group>
+                            <group>
+                                <field name="region_id"/>
+                                <field name="active"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+        <record id="config_province_action" model="ir.actions.act_window">
+            <field name="name">Province</field>
+            <field name="res_model">config.province</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="config_municipality_tree" model="ir.ui.view">
+            <field name="name">config.municipality.tree</field>
+            <field name="model">config.municipality</field>
+            <field name="arch" type="xml">
+                <tree string="Municipality/City">
+                    <field name="name"/>
+                    <field name="municipality_code"/>
+                </tree>
+            </field>
+        </record>
+        <record id="config_municipality_form" model="ir.ui.view">
+            <field name="name">config.municipality.form</field>
+            <field name="model">config.municipality</field>
+            <field name="arch" type="xml">
+                <form string="Municipality/City">
+                    <sheet string="Municipality/City">
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="municipality_code"/>
+                            </group>
+                            <group>
+                                <field name="province_id"/>
+                                <field name="active"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+        <record id="config_municipality_action" model="ir.actions.act_window">
+            <field name="name">Municipality/City</field>
+            <field name="res_model">config.municipality</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="config_barangay_tree" model="ir.ui.view">
+            <field name="name">config.barangay.tree</field>
+            <field name="model">config.barangay</field>
+            <field name="arch" type="xml">
+                <tree string="Barangay">
+                    <field name="name"/>
+                    <field name="barangay_code"/>
+                </tree>
+            </field>
+        </record>
+        <record id="config_barangay_form" model="ir.ui.view">
+            <field name="name">config.barangay.form</field>
+            <field name="model">config.barangay</field>
+            <field name="arch" type="xml">
+                <form string="Barangay">
+                    <sheet string="Barangay">
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="barangay_code"/>
+                            </group>
+                            <group>
+                                <field name="municipality_id"/>
+                                <field name="active"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+        <record id="config_barangay_action" model="ir.actions.act_window">
+            <field name="name">Barangay</field>
+            <field name="res_model">config.barangay</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="config_zipcode_tree" model="ir.ui.view">
+            <field name="name">config.zipcode.tree</field>
+            <field name="model">config.zipcode</field>
+            <field name="arch" type="xml">
+                <tree string="ZIP code">
+                    <field name="name"/>
+                    <field name="municipality_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="config_zipcode_form" model="ir.ui.view">
+            <field name="name">config.zipcode.form</field>
+            <field name="model">config.zipcode</field>
+            <field name="arch" type="xml">
+                <form string="ZIP code">
+                    <sheet string="ZIP code">
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="municipality_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+        <record id="config_zipcode_action" model="ir.actions.act_window">
+            <field name="name">ZIP code</field>
+            <field name="res_model">config.zipcode</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="localization_main_menu" name="Localization"
+                  web_icon="ph_localization,static/description/icon.png" parent="Config_menu_parent"/>
+
+        <menuitem name="Region"
+                  id="config_region_menu"
+                  action="config_region_action"
+                  parent="localization_main_menu"
+                  />
+
+        <menuitem name="Province"
+                  id="config_province_menu"
+                  action="config_province_action"
+                  parent="localization_main_menu"
+                  />
+
+        <menuitem name="Municipality/City"
+                  id="config_municipality_menu"
+                  action="config_municipality_action"
+                  parent="localization_main_menu"
+                  />
+
+        <menuitem name="Barangay"
+                  id="config_barangay_menu"
+                  action="config_barangay_action"
+                  parent="localization_main_menu"
+                  />
+
+        <menuitem name="ZIP code"
+                  id="config_zipcode_menu"
+                  action="config_zipcode_action"
+                  parent="localization_main_menu"
+                  />
+    </data>
+</odoo>
