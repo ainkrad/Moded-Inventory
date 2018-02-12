@@ -1,6 +1,8 @@
-from odoo import api, fields, models
+from odoo import api, fields, models, _
 from datetime import date, datetime,timedelta
 from dateutil.relativedelta import relativedelta
+from dateutil.parser import parse
+import arrow
 from odoo.exceptions import UserError
 
 class IntermentLoanLine(models.Model):
@@ -41,17 +43,33 @@ class IntermentLoanLine(models.Model):
 
     @api.multi
     def read_next_line(self):
+        has_line = False
         loan_line = self.env['interment.loan.line']
-        for rec in self:
-            date_start_str = datetime.strptime(rec.date_for_payment, '%Y-%m-%d')
-            if rec.balance:
-                date_start_str = date_start_str + relativedelta(months=1)
-                next_line = loan_line.search([('date_for_payment','=', date_start_str)])
-                next_line.update({'amount_to_pay': (next_line.amount_to_pay - rec.balance),
-                                  'notes': str(rec.balance) + 'is Deducted on the amount to pay for this month.'
-                                  })
+        date_start_str = datetime.strptime(self.date_for_payment, '%Y-%m-%d').date()
+        date_start_str = date_start_str + relativedelta(months=1)
+        loan_line_id = loan_line.search([
+            # ('date_for_payment','=', date_start_str),
+            ('loan_id','=',self.loan_id.id)])
+        # if has_line == loan_line_id:
+        print loan_line_id[-1].id
+        print loan_line_id[-1].date_for_payment
 
-        # pass
+        if self.id == loan_line_id[-1].id: # read the last record
+            pass
+        else: #if not the last record falls here.
+            print 'yowzzz'
+            next_line_id = loan_line.search([
+                ('date_for_payment','=', date_start_str),
+                ('loan_id', '=', self.loan_id.id)])
+            for l in next_line_id:
+                print l[-1].date_for_payment
+                print l.date_for_payment
+                if self.balance:
+                    amount_to_pay = l.amount_to_pay - self.balance
+                    res = l.write({'amount_to_pay': round(amount_to_pay,2),
+                                                     'notes':  '%.2f is Deducted on the amount to pay for this month.' % self.balance
+                                                     })
+            return res
 
     @api.multi
     def draft_action(self):
@@ -59,8 +77,11 @@ class IntermentLoanLine(models.Model):
 
     @api.multi
     def confirm_action(self):
-        self.state = 'confirm'
-        self.read_next_line()
+        # self.state = 'confirm'
+        if self.paid_amount < self.amount_to_pay:
+            raise UserError(_('Amount paid is less Than the contract amount to pay.'))
+        else:
+            self.read_next_line()
 
     @api.one
     def action_paid_amount(self):

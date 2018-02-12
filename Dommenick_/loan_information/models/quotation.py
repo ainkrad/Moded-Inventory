@@ -30,7 +30,7 @@ class IntermentQuotation(models.Model):
     dp_split = fields.Float(string='4 Months Split', store=False, compute='_get_split_dp')
     purchase_term = fields.Selection([('cash','Cash'),('install','Installment')],string='Payment Type',default='cash')
 
-    @api.onchange(purchase_term)
+    @api.onchange('purchase_term')
     def onchange_purchase_term(self):
         self.is_split_cash = (self.purchase_term == 'cash')
     bal_payment_term = fields.Float(string='Balance Payment', store=False, compute='_get_bpt')
@@ -73,9 +73,9 @@ class IntermentQuotation(models.Model):
                 compute_total_amount = loan.payment_term_id.no_months * loan.monthly_payment
                 bal_amount = (compute_total_amount) - (total_paid_amount)
             
-            self.total_amount = compute_total_amount
-            self.balance_amount = bal_amount
-            self.total_paid_amount = total_paid_amount
+            self.total_amount = round(compute_total_amount,2)
+            self.balance_amount = round(bal_amount,2)
+            self.total_paid_amount = round(total_paid_amount,2)
 
     @api.onchange('product_id','selling_price','product_pricelist_id','purchase_term')
     def get_selling_price(self):
@@ -221,31 +221,35 @@ class IntermentQuotation(models.Model):
         loan_line_dp = self.env['interment.loan.line.dp']
         loan_line_dp.search([('loan_id', '=', self.id)]).unlink()
 
+        payment_config = self.env['payment.config']
+
         for loan in self:
             loan.refresh()
             date_start_str = datetime.strptime(loan.start_payment_date,'%Y-%m-%d')
             counter = 1
             if self.purchase_term == 'cash':
                 if self.is_split_cash == True:
+                    payment_term_id = payment_config.search([('name','=','3-months deferred')]).id
                     amount_per_time = loan.split_cash
                     for i in range(1, 3 + 1):
                         line_id = loan_line.create({
                             'date_for_payment': date_start_str,
-                            'amount_to_pay': amount_per_time,
+                            'amount_to_pay': round(amount_per_time,2),
                             'customer_id': loan.customer_id.id,
                             'loan_id': loan.id,
-                            'payment_term': loan.payment_term_id.id})
+                            'payment_term': payment_term_id})
                         counter += 1
                         date_start_str = date_start_str + relativedelta(months=1)
                 else:
                     amount_per_time = loan.spot_cash
+                    payment_term_id = payment_config.search([('name', '=', 'spotcash')]).id
                     for i in range(1, 1 + 1):
                         line_id = loan_line.create({
                             'date_for_payment': date_start_str,
-                            'amount_to_pay': amount_per_time,
+                            'amount_to_pay': round(amount_per_time,2),
                             'customer_id': loan.customer_id.id,
                             'loan_id': loan.id,
-                            'payment_term': loan.payment_term_id.id})
+                            'payment_term': payment_term_id})
                         counter += 1
                         date_start_str = date_start_str + relativedelta(months=1)
         return True
@@ -272,7 +276,7 @@ class IntermentQuotation(models.Model):
                 for i in range(1, 4 + 1):
                     line_id = loan_line_dp.create({
                         'date_for_payment': date_start_str,
-                        'amount_to_pay': amount_per_time,
+                        'amount_to_pay': round(amount_per_time,2),
                         'customer_id': loan.customer_id.id,
                         'loan_id': loan.id,
                         'payment_term': loan.payment_term_id.id})
@@ -283,7 +287,7 @@ class IntermentQuotation(models.Model):
                 for i in range(1, 1 + 1):
                     line_id = loan_line_dp.create({
                         'date_for_payment': date_start_str,
-                        'amount_to_pay': amount_per_time,
+                        'amount_to_pay': round(amount_per_time,2),
                         'customer_id': loan.customer_id.id,
                         'loan_id': loan.id,
                         'payment_term': loan.payment_term_id.id})
@@ -325,7 +329,7 @@ class IntermentQuotation(models.Model):
                 compute_total_amount_dp = loan.down_payment
 
             bal_amount_dp = (compute_total_amount_dp) - (total_amount_dp)
-            self.total_amount_dp = compute_total_amount_dp
-            self.balance_amount_dp = bal_amount_dp
-            self.total_paid_amount_dp = total_amount_dp
+            self.total_amount_dp = round(compute_total_amount_dp,2)
+            self.balance_amount_dp = round(bal_amount_dp,2)
+            self.total_paid_amount_dp = round(total_amount_dp,2)
 

@@ -7,10 +7,10 @@
             <field name="model">interment.loan.line</field>
             <field name="arch" type="xml">
                 <form string="" create="false" delete="false" duplicate="false" >
-                    <header>
-                        <button name="read_next_line" type="object" state="draft" string="Confirm"/>
+                    <header class="oe_edit_only">
+                        <button name="read_next_line" type="object" states="draft" string="Confirm"/>
                         <!--<button name="action" type="object" string="ObjectButton"/>-->
-                        <field name="state" widget="statusbar" statusbar_visible=""/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
                     </header>
                     <sheet>
                         <group col="2">
