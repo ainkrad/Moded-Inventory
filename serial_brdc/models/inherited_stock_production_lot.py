@@ -10,7 +10,8 @@ class inherited_stock_production_lot(models.Model):
             ('fp', 'Fully Paid'),
             ('amo', 'Amortized'),
             ('wit', 'Interred'),
-            ('r', 'Reserved'), ]
+            ('r', 'Reserved'),
+            ('ter', 'Terminated')]
 
     block_number = fields.Char(string="Block Number / Layer")
     lot_number = fields.Char(string="Lot Number / Column")
